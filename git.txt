@@ -1,0 +1,21 @@
+学习：廖雪峰的git教程https://www.liaoxuefeng.com/wiki/896043488029600/896067008724000
+个人对git的理解：git就是一个版本管理的工具，提供给多人协同办公，开发的一个工具。从文件到项目，就像从一个人到一个公司。
+说是公司或许有点大了，但是一样的道理，团队应该比较贴切。
+个人使用：我们可以使用git来对我们进行的工作进度进行管理，存储。比如说我们写写文章，做项目。git可以很好的记录这个过程中我们每次进行的更改
+以便在我们发现一些错误或异常时能够及时处理，节省时间。
+团队使用：我们运用的更多的是一群人来一起使用，比如说开发一个app,网站，大型项目等等。同一个任务为了达到的更好的工作效率，通常会把任务一个任务
+分解为许许多多的小目标，并且分配给不同的人来实现。在这过程中我们就需要很好的整合将团队每个人完成的任务才能实现在最终的目标任务。这就提到了git两个
+重要的概念 即分支 与 合并。
+
+linux下执行命令 sudo apt-get install git
+windows直接官网下载安装即可https://git-scm.com/downloads
+然后设置账户即可 git config --global username ""
+git config --global useremail ""
+git init//初始化仓库
+git add filename//添加文件到仓库缓存区
+git commit -m "提交说明"//提交缓存区代码到仓库
+git log//查看提交日志
+git reset --hard HEAD^//版本回退
+git reflog//在退回当前的一些版本
+git reset --hard commit_id//回退到某一次提交前的版本
+git status //查看当前状态
