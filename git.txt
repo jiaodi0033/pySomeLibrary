@@ -13,9 +13,17 @@ windows直接官网下载安装即可https://git-scm.com/downloads
 git config --global useremail ""
 git init//初始化仓库
 git add filename//添加文件到仓库缓存区
+git rm filename//删除文件，跟git add 一样
 git commit -m "提交说明"//提交缓存区代码到仓库
 git log//查看提交日志
 git reset --hard HEAD^//版本回退
 git reflog//在退回当前的一些版本
 git reset --hard commit_id//回退到某一次提交前的版本
 git status //查看当前状态
+git checkout --filename//撤销对文件的修改，回到上一次commit或是add前的状态
+git reset HEAD filename//把添加到暂缓区的文件撤销到工作区
+远程仓库连接，需要创建SSH KEY
+使用ssh-keygen -t rsa -C "xxxxxx@qq.com"//生成公钥id_rsa.pub和私钥id_rsa通常生成在.ssh文件目录下
+git push -u origin master //第一次将本地分支推送到远程仓库
+git clone 仓库地址//从仓库克隆到本地
+git支持多协议，除了ssh，还有https等，https传输速度慢，同时每次拉取还需要输入口令显得麻烦。
