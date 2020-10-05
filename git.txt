@@ -27,3 +27,10 @@ git reset HEAD filename//把添加到暂缓区的文件撤销到工作区
 git push -u origin master //第一次将本地分支推送到远程仓库
 git clone 仓库地址//从仓库克隆到本地
 git支持多协议，除了ssh，还有https等，https传输速度慢，同时每次拉取还需要输入口令显得麻烦。
+分支管理
+git branch//查看分支
+git branch xx//创建分支xx
+git checkout xx或是git switch xx//切换到xx分支
+git checkout -b xx//创建并切换到xx分支
+git merge xx //将xx分支合并到当前分支
+git branch -d xx//删除xx分支
